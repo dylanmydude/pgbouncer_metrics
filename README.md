@@ -1,3 +1,4 @@
+summarise_metrics.py
 Ingest PostgreSQL CSV exports, tag as 'before' or 'after' the threshold (2025-04-30 09:00),
 and output summary tables for easy comparison of trends.
 
@@ -10,3 +11,13 @@ Usage:
   pip install pandas
   Set EXPORTS_FOLDER and THRESHOLD below
   Run: python3 compare_before_after.py
+
+vmstat_compate.py:
+Ingest vmstat_*.log from a folder, tag as 'before' or 'after'
+the PgBouncer threshold, and output vmstat_summary.csv
+showing average values of each metric for easy comparison.
+
+Usage:
+  pip install pandas
+  Update EXPORTS_FOLDER and THRESHOLD below
+  Run: python3 vmstat_compare.py
