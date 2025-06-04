@@ -1,7 +1,7 @@
 export_metrics.sh
 a .pgpass file is needed to discretely access the passwords for the db, this is the format:
 
-# hostname : port : database      : user         : password
+hostname : port : database      : user         : password
 localhost:5432:db_name            :user          :password1
 localhost:5432:db_name_2          :user_2        :password2
 this is located in /home/user/.pgpass
